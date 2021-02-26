@@ -57,7 +57,7 @@ contract Medianizer is DSThing {
     }
 
     function poke() external {
-        (bytes32 val_, bool has_) = compute();
+        (bytes32 val_ , bool has_) = compute();
         val = uint128(val_);
         has = has_;
         emit LogValue(val_);
